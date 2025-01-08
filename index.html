@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我们的甜蜜时光</title>
+    <title>牛小宝&赵小鸡的家|记录我们一起走过的日子</title>
 	<link rel="icon" href="./img/JXGZ.ico" type="image/x-icon">
     <style>
         /* 通用样式设置 */
@@ -265,8 +265,8 @@
 <!-- 		<div id="niu">
 			<a >牛小宝的家</a>	
 		</div> -->
-		<h3 >牛小宝&赵小鸡的家</h3>
-        <h1 >记录我们一起走过的日子</h1>
+		<h3 >曾经是牛小宝&赵小鸡的家</h3>
+        <h1 >记录我们曾经一起走过的日子</h1>
         <div class="countdown">
             <span id="countdown-text"></span>
         </div>
@@ -328,10 +328,11 @@
     </footer>
     <script>
         // 设置目标日期，这里假设是 2024-09-27T00:00:00，可按需替换
-        const targetDate = new Date('2024-09-27T00:00:00');
+        const startDate = new Date('2024-09-27T00:00:00');
+        const lasttDate = new Date('2025-01-07T13:24:00');
         function updateCountdown() {
             const now = new Date();
-            const diff = now - targetDate;
+            const diff = lasttDate - startDate;
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
